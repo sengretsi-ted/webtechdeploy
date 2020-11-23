@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review - Dalbergia Realty Servicies</title>
+</head>
+<body id="reviewBody">
+  <h1 id="goUp"></h1>
+  <a href="index.html"><img src="re_logo.jpg" alt="logo" width="70" height="50"></a>
+
+  <h3 style="text-align: center;">Any bugs, report here</h3>
+    <nav>
+       
+        <ul>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="review.html">Review</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </nav>
+
+  <section style="align-items: center;">
+    <div style="text-align: center;">
+      <h3>Here's what some of our customers have to say</h3>
+      <p>
+        “My agent actually listened. If you’ve sold a home before, you know that goes far.”
+        <br> <b> - David G.
+        <br>San Diego, CA</b>
+      </p>
+      <p>
+        “My agent listened to me and found me everything I wanted. I could tell she actually cared.”
+          <br> <b>- Julie S.
+          <br> Minneapolis, MN</b>
+      </p>
+    </div>
+    <h3 style="text-align: center;">
+      Credit: <a style="text-decoration: none;" href="https/www.bhhs.com">bhhs.com</a>
+    </h3>
+     <div>
+    <form class=needs-validation validate>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom01">Can we make this website better?</label><br>
+          <textarea cols="80" rows="10" placeholder="Type your suggestions here" required></textarea>
+        </div>
+        <br>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+        <br>
+    </form>
+    </div>  
+  </section>
+
+  <script>
+    // Function to validate input and send success notification
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+            alert("Your form has been received")
+          }, false);
+        });
+      }, false);
+    })();
+    
+    </script>
+    <br>
+    <a href="index.html">Back to Home page</a> 
+</body>
+<footer style="text-align: center;">
+    &COPY; 2020, Dalbergia Realty Services
+</footer>
+</html>

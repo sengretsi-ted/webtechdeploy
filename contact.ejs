@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page - Dalbergia Realty Servicies</title>
+
+</head>
+<body id="contactBody">
+    <a href="index.html"><img src="re_logo.jpg" alt="logo" width="70" height="50"></a>
+    <nav>
+        <h1 id="goUp"></h1>
+
+        
+        <ul>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="review.html">Review</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </nav>
+   <div>
+    <h4>
+        Want to contact any of our agents?
+    </h4>
+        <!-- <form action="contact.html">
+            <label id="arg1" for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="John" required><br>
+            <label id="arg2" for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Doe" required><br>
+            <label id="arg3" for="email">Email:</label><br>
+            <input type="email" name="email" id="email" placeholder="johndoe@email.com" required><br>
+            <label id="arg4" for="text"></label>
+            Comments:
+          </form>
+          <textarea name="" id="comment" cols="19" rows="10" placeholder="Leave your requests here:" required></textarea>
+          <br>
+          <input id="submit" type="submit" value="Submit Form" onclick="notify()" required>
+          <br>
+          <br> -->
+          <form class="needs-validation" validate>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom01">First name:</label><br>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="John" required>
+              </div>
+              <br>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Last name:</label><br>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Doe" required>
+              </div>
+            </div>
+            <!-- <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom03">City:</label><br>
+                <input type="text" class="form-control" id="validationCustom03" required>
+              </div> -->
+              <br>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom04">State:</label><br>
+                <select class="custom-select" id="validationCustom04" required>
+                  <option selected disabled value="">Pick an Option</option>
+                  <option>Alpharetta, Georgia</option>
+                  <option>Bradford, Pittsburgh</option>
+                  <option>Fort Lauderdale, Florida</option>
+                  <option>McCord, Oklahma</option>
+                  <option>Scotsdale, Arizona</option>
+                  <option>West Palm Beach, Florida</option>
+                  <option>Calabasas, California</option>
+                </select>
+                
+              </div>
+              <br>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom05">Zip:</label><br>
+                <input type="number" class="form-control" id="validationCustom05" placeholder="787" required>
+              </div>
+            </div>
+            <br>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback" style="color: red !important;">
+                  You must agree before submitting.
+                </div>
+                <br>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </form>
+          <br>
+          <br>
+
+          <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+          (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                  alert("Your form has been received")
+                }, false);
+              });
+            }, false);
+          })();
+          
+          </script>
+   </div>
+   <a href="index.html">Back to Home page</a>   
+</body>
+
+<footer style="text-align: center;">
+    &COPY; 2020, Dalbergia Realty Services
+</footer>
+
+<!-- <script>
+    var comment = document.getElementById('comment');
+    var button = document.getElementById('submit');
+
+    function notify(){
+        if (comment.innerText != null){
+            alert("Your form has been received!");
+        } else {
+            alert("Please make sure you have filled the form");
+        }
+        
+    }
+    button.addEventListener('click', notify);
+</script> -->
+</html>
